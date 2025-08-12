@@ -7,9 +7,8 @@ import type { Metadata } from "next";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "ARC (Allied Restoration Contractors)",
-  description:
-    "Award Winning Service Allied Restoration Contractors, Repairs & Replacement",
+  title: "Website URL",
+  description: "Website slogan",
 };
 
 export default function RootLayout({

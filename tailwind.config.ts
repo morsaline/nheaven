@@ -16,7 +16,7 @@ export default {
       colors: {
         "gray-light": "#f1f1f1",
         black: "#000",
-        "red-primary": "#DD2D2C",
+        "red-primary": "#00ff",
         background: "var(--background)",
         title: "#011936",
         foreground: "var(--foreground)",

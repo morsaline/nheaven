@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 
 const NavMenu = ({
   className,
-  isShowBorder = false,
 }: {
   className?: string;
   isShowBorder?: boolean;
@@ -13,51 +12,39 @@ const NavMenu = ({
   const pathname = usePathname();
   return (
     <div className={cn("flex  gap-6  font-normal ps-3", className)}>
-      <Link href={"/roofing"}>
+      <Link href={"/"}>
         <div
           // className="cursor-pointer hover:text-red-primary transition duration-200"
           className={cn(
             "cursor-pointer hover:text-red-primary transition duration-200",
-            pathname === "/roofing" && "text-red-primary font-semibold"
+            pathname === "/" && "text-red-primary font-semibold"
           )}
         >
-          Roofing
+          Home
         </div>
       </Link>
-      {isShowBorder && <div className="h-5 border "></div>}
-      <Link href={"/insurance-claim"}>
+      <Link href={"/about"}>
         <div
+          // className="cursor-pointer hover:text-red-primary transition duration-200"
           className={cn(
             "cursor-pointer hover:text-red-primary transition duration-200",
-            pathname === "/insurance-claim" && "text-red-primary font-semibold"
+            pathname === "/about" && "text-red-primary font-semibold"
           )}
         >
-          Insurance Claim
+          About Us
         </div>
       </Link>
-      {isShowBorder && <div className="h-5 border "></div>}
-      <Link href={"/siding"}>
+      <Link href={"/contact"}>
         <div
+          // className="cursor-pointer hover:text-red-primary transition duration-200"
           className={cn(
             "cursor-pointer hover:text-red-primary transition duration-200",
-            pathname === "/sliding" && "text-red-primary font-semibold"
+            pathname === "/contact" && "text-red-primary font-semibold"
           )}
         >
-          Siding
+          Contact Us
         </div>
       </Link>
-      {isShowBorder && <div className="h-5 border "></div>}
-      <Link href={"/finance"}>
-        <div
-          className={cn(
-            "cursor-pointer hover:text-red-primary transition duration-200",
-            pathname === "/finance" && "text-red-primary font-semibold"
-          )}
-        >
-          Financing
-        </div>
-      </Link>
-      {isShowBorder && <div className="h-5 border "></div>}
     </div>
   );
 };
