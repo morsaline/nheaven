@@ -1,5 +1,5 @@
 "use client";
-import logo from "@/assets/logo/footerLogo.png";
+import logo from "@/assets/logo/logo.png";
 import { cn } from "@/lib/utils";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import Image from "next/image";
@@ -85,7 +85,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-light text-base font-medium">
-              Restoring Homes After Storms and Seasons.
+              Business description goes here. It should be concise and
+              informative, providing an overview of the services offered.
             </p>
             <div className="flex items-center gap-4">
               <div className="bg-[#36607b] p-2 rounded-md text-white">

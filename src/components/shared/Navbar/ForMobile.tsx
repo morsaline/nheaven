@@ -1,5 +1,5 @@
 "use client";
-import logo from "@/assets/logo/redTextLogo.png";
+import logo from "@/assets/logo/logo.png";
 import { Drawer, Space } from "antd";
 import Image from "next/image";
 import { useState } from "react";
