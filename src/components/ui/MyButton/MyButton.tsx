@@ -12,7 +12,7 @@ const MyButton: FC<MyButtonProps> = ({ title, className }) => {
     <>
       <Button
         radius="sm"
-        className={cn("bg-red-primary text-white rounded-md", className)}
+        className={cn("bg-primary text-white rounded-md", className)}
       >
         {title}
       </Button>

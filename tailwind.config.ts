@@ -16,7 +16,7 @@ export default {
       colors: {
         "gray-light": "#f1f1f1",
         black: "#000",
-        "red-primary": "#00ff",
+        primary: "#00ff",
         background: "var(--background)",
         title: "#011936",
         foreground: "var(--foreground)",
@@ -28,7 +28,7 @@ export default {
         padding: "20px",
         center: true,
         screens: {
-          DEFAULT: "1140px",
+          DEFAULT: "1600px",
         },
       },
       backgroundImage: {

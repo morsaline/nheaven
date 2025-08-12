@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "Website URL",
+  title: "Domain Name",
   description: "Website slogan",
 };
 

@@ -71,7 +71,7 @@ const forthRow = [
 const Footer = () => {
   const pathname = usePathname();
   return (
-    <div className="bg-[#1E2228] py-20">
+    <div className="bg-black py-20">
       <div className="container">
         <div className=" grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5">
           <div className="flex flex-col gap-6">
@@ -109,9 +109,8 @@ const Footer = () => {
                 <Link href={"/gutters"}>
                   <div
                     className={cn(
-                      "cursor-pointer hover:text-red-primary transition duration-200",
-                      pathname === "/gutters" &&
-                        "text-red-primary font-semibold"
+                      "cursor-pointer hover:text-primary transition duration-200",
+                      pathname === "/gutters" && "text-primary font-semibold"
                     )}
                   >
                     Gutters
@@ -120,8 +119,8 @@ const Footer = () => {
                 <Link href={"/window"}>
                   <div
                     className={cn(
-                      "cursor-pointer hover:text-red-primary transition duration-200",
-                      pathname === "/window" && "text-red-primary font-semibold"
+                      "cursor-pointer hover:text-primary transition duration-200",
+                      pathname === "/window" && "text-primary font-semibold"
                     )}
                   >
                     Windows
@@ -130,9 +129,8 @@ const Footer = () => {
                 <Link href={"/commercial"}>
                   <div
                     className={cn(
-                      "cursor-pointer hover:text-red-primary transition duration-200",
-                      pathname === "/commercial" &&
-                        "text-red-primary font-semibold"
+                      "cursor-pointer hover:text-primary transition duration-200",
+                      pathname === "/commercial" && "text-primary font-semibold"
                     )}
                   >
                     Commercial
@@ -149,9 +147,9 @@ const Footer = () => {
                     <div className=" ps-1">
                       <Link href={"/pricing-cost-calculator/roofing"}>
                         <div
-                          // className="cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded"
+                          // className="cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded"
                           className={cn(
-                            "cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
+                            "cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
                           )}
                         >
                           Roof Cost Calculator
@@ -159,9 +157,9 @@ const Footer = () => {
                       </Link>
                       <Link href={"/pricing-cost-calculator/siding"}>
                         <div
-                          // className="cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 rounded"
+                          // className="cursor-pointer hover:text-primary hover:bg-slate-100 p-2 rounded"
                           className={cn(
-                            "cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
+                            "cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
                           )}
                         >
                           Siding Cost Calculator
@@ -169,9 +167,9 @@ const Footer = () => {
                       </Link>
                       <Link href={"/pricing-cost-calculator/window"}>
                         <div
-                          // className="cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 rounded"
+                          // className="cursor-pointer hover:text-primary hover:bg-slate-100 p-2 rounded"
                           className={cn(
-                            "cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
+                            "cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
                           )}
                         >
                           Window Cost Calculator
@@ -186,7 +184,7 @@ const Footer = () => {
           <div>
             {thirdRow?.map((item, i) => (
               <Link href={item?.link} key={i}>
-                <div className="cursor-pointer text-white hover:text-red-primary pb-5 rounded">
+                <div className="cursor-pointer text-white hover:text-primary pb-5 rounded">
                   {item?.title}
                 </div>
               </Link>
@@ -200,7 +198,7 @@ const Footer = () => {
             {forthRow?.map((item, i) => (
               <div
                 key={i}
-                className="cursor-pointer text-gray-light hover:text-red-primary p-3 rounded flex items-start gap-2"
+                className="cursor-pointer text-gray-light hover:text-primary p-3 rounded flex items-start gap-2"
               >
                 <div>{item?.icon}</div>
                 <p className="w-full -mt-1"> {item?.title}</p>

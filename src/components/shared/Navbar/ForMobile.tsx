@@ -68,7 +68,7 @@ const ForMobile = () => {
                           <Link href={"/gutters"}>
                             <div
                               className={cn(
-                                "cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
+                                "cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
                               )}
                             >
                               Gutter
@@ -77,7 +77,7 @@ const ForMobile = () => {
                           <Link href={"/commercial"}>
                             <div
                               className={cn(
-                                "cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
+                                "cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
                               )}
                             >
                               Commercial
@@ -97,9 +97,9 @@ const ForMobile = () => {
                         <div className=" ps-1">
                           <Link href={"/pricing-cost-calculator/roofing"}>
                             <div
-                              // className="cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded"
+                              // className="cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded"
                               className={cn(
-                                "cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
+                                "cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
                               )}
                             >
                               Roof Cost Calculator
@@ -107,9 +107,9 @@ const ForMobile = () => {
                           </Link>
                           <Link href={"/pricing-cost-calculator/siding"}>
                             <div
-                              // className="cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 rounded"
+                              // className="cursor-pointer hover:text-primary hover:bg-slate-100 p-2 rounded"
                               className={cn(
-                                "cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
+                                "cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
                               )}
                             >
                               Siding Cost Calculator
@@ -117,9 +117,9 @@ const ForMobile = () => {
                           </Link>
                           <Link href={"/pricing-cost-calculator/window"}>
                             <div
-                              // className="cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 rounded"
+                              // className="cursor-pointer hover:text-primary hover:bg-slate-100 p-2 rounded"
                               className={cn(
-                                "cursor-pointer hover:text-red-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
+                                "cursor-pointer hover:text-primary hover:bg-slate-100 p-2 mb-2 rounded transition duration-200"
                               )}
                             >
                               Window Cost Calculator

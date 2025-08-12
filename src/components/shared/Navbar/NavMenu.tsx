@@ -14,10 +14,10 @@ const NavMenu = ({
     <div className={cn("flex  gap-6  font-normal ps-3", className)}>
       <Link href={"/"}>
         <div
-          // className="cursor-pointer hover:text-red-primary transition duration-200"
+          // className="cursor-pointer hover:text-primary transition duration-200"
           className={cn(
-            "cursor-pointer hover:text-red-primary transition duration-200",
-            pathname === "/" && "text-red-primary font-semibold"
+            "cursor-pointer hover:text-primary transition duration-200",
+            pathname === "/" && "text-primary font-semibold"
           )}
         >
           Home
@@ -25,10 +25,10 @@ const NavMenu = ({
       </Link>
       <Link href={"/about"}>
         <div
-          // className="cursor-pointer hover:text-red-primary transition duration-200"
+          // className="cursor-pointer hover:text-primary transition duration-200"
           className={cn(
-            "cursor-pointer hover:text-red-primary transition duration-200",
-            pathname === "/about" && "text-red-primary font-semibold"
+            "cursor-pointer hover:text-primary transition duration-200",
+            pathname === "/about" && "text-primary font-semibold"
           )}
         >
           About Us
@@ -36,10 +36,10 @@ const NavMenu = ({
       </Link>
       <Link href={"/contact"}>
         <div
-          // className="cursor-pointer hover:text-red-primary transition duration-200"
+          // className="cursor-pointer hover:text-primary transition duration-200"
           className={cn(
-            "cursor-pointer hover:text-red-primary transition duration-200",
-            pathname === "/contact" && "text-red-primary font-semibold"
+            "cursor-pointer hover:text-primary transition duration-200",
+            pathname === "/contact" && "text-primary font-semibold"
           )}
         >
           Contact Us
