@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
-import FacebookPixel from "@/FacebookPixel";
 
+import { ConfigProvider, theme } from "antd";
 import "antd/dist/reset.css";
 
 const inter = Inter({
@@ -30,27 +30,40 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4743849065459298"
-          crossOrigin="anonymous"
-        />
-      </head>
+      <head></head>
       <body
         suppressHydrationWarning={true}
         className={`${inter.variable} antialiased !bg-white`}
       >
         <NextUiProvider>
           <ReduxProvider>
-            <>
-              <div className="min-h-screen grid grid-rows-[auto_1fr_auto] max-w-[100vw] overflow-hidden">
-                <FacebookPixel />
-                {children}
-              </div>
-              <ScrollToTopButton />
-              <Toaster />
-            </>
+            <ConfigProvider
+              theme={{
+                token: {
+                  colorPrimary: "#0BA8CC",
+                  colorInfo: "#0BA8CC",
+                  colorSuccess: "#3ECF8E",
+                  colorWarning: "#FAAD14",
+                  colorError: "#FF6B6B",
+
+                  colorTextBase: "#1F1F1F",
+                  colorBgBase: "#FFFFFF",
+                  borderRadius: 8,
+                  fontSize: 15,
+                  lineHeight: 1.6,
+                  controlHeight: 40,
+                },
+                algorithm: theme.defaultAlgorithm,
+              }}
+            >
+              <>
+                <div className="min-h-screen grid grid-rows-[auto_1fr_auto] text-title max-w-[100vw] overflow-hidden">
+                  {children}
+                </div>
+                <ScrollToTopButton />
+                <Toaster />
+              </>
+            </ConfigProvider>
           </ReduxProvider>
         </NextUiProvider>
       </body>

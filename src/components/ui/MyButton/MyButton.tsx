@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { Button } from "antd";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface MyButtonProps {
   title: string;
@@ -10,9 +10,7 @@ interface MyButtonProps {
 const MyButton: FC<MyButtonProps> = ({ title, className }) => {
   return (
     <>
-      <Button
-        className={cn("bg-tomato text-white rounded-md border-none", className)}
-      >
+      <Button type="primary" danger className={cn(className)}>
         {title}
       </Button>
     </>

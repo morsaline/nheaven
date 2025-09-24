@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #fff;
-    --foreground: #86a0b0;
+    --background: #000;
+    --foreground: #e5e5e5;
   }
 }
 
@@ -20,19 +20,17 @@ body {
   color: var(--foreground);
 }
 
-/* Chrome, Safari, Edge, Opera */
+/* Remove number arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-/* HTML: <div class="loader"></div> */
+/* Loader */
 .loader {
   width: fit-content;
   font-weight: bold;
@@ -50,7 +48,6 @@ input[type="number"] {
   -webkit-background-clip: text;
   background-clip: text;
 }
-
 @keyframes l21 {
   100% {
     background-position: left;

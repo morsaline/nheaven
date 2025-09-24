@@ -16,11 +16,34 @@ export default {
       colors: {
         black: "#000",
         title: "#121212",
-        primary: "#0BA8CC",
+
+        // Match Ant Design tokens
+        primary: {
+          DEFAULT: "#00B2D8", // Blue
+          dark: "#0092B3",
+          light: "#33C7E2",
+        },
+        success: {
+          DEFAULT: "#3ECF8E", // Green
+          dark: "#158562",
+          light: "#44C998",
+        },
+        warning: {
+          DEFAULT: "#FAAD14", // Orange/Yellow
+          dark: "#D48806",
+          light: "#FFD666",
+        },
+        danger: {
+          DEFAULT: "#FF6B6B", // Red
+          dark: "#D9363E",
+          light: "#FF7875",
+        },
+
         tomato: "#FF6B6B",
         "gray-light": "#f1f1f1",
         "light-green": "#3ECF8E",
         "light-orange": "#FFF4E9",
+
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
@@ -33,10 +56,6 @@ export default {
         screens: {
           DEFAULT: "1600px",
         },
-      },
-      backgroundImage: {
-        "banner-gradient":
-          "linear-gradient(270deg, rgba(255,255,255, 1) 0%, rgba(255, 255,255,1) 40%)",
       },
     },
   },

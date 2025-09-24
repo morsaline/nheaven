@@ -1,8 +1,10 @@
 "use client";
 import logo from "@/assets/logo/logo.png";
 import MyButton from "@/components/ui/MyButton/MyButton";
+import { Button } from "antd";
 import Image from "next/image";
 import Link from "next/link";
+import { FaUserCircle } from "react-icons/fa";
 import NavMenu from "./NavMenu";
 
 const ForPc = () => {
@@ -24,9 +26,15 @@ const ForPc = () => {
           <NavMenu />
         </div>
 
-        <div className="">
+        <div className="space-x-5 space-y-5">
+          <MyButton title="Do you have clinic?" className="rounded-lg" />
           <Link href={"/login"}>
-            <MyButton title="Do you have clinic?" className="rounded-lg" />
+            <Button
+              icon={<FaUserCircle />}
+              className="bg-transparent text-white"
+            >
+              Signin
+            </Button>
           </Link>
         </div>
       </div>
