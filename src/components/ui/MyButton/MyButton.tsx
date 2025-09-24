@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { Button } from "@nextui-org/react";
+import { Button } from "antd";
 import React, { FC } from "react";
 
 interface MyButtonProps {
@@ -11,8 +11,7 @@ const MyButton: FC<MyButtonProps> = ({ title, className }) => {
   return (
     <>
       <Button
-        radius="sm"
-        className={cn("bg-primary text-white rounded-md", className)}
+        className={cn("bg-tomato text-white rounded-md border-none", className)}
       >
         {title}
       </Button>

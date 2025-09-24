@@ -14,11 +14,14 @@ export default {
         inter: ["var(--font-inter)"],
       },
       colors: {
-        "gray-light": "#f1f1f1",
         black: "#000",
-        primary: "#00ff",
+        title: "#121212",
+        primary: "#0BA8CC",
+        tomato: "#FF6B6B",
+        "gray-light": "#f1f1f1",
+        "light-green": "#3ECF8E",
+        "light-orange": "#FFF4E9",
         background: "var(--background)",
-        title: "#011936",
         foreground: "var(--foreground)",
       },
       screens: {

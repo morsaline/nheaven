@@ -7,10 +7,10 @@ import NavMenu from "./NavMenu";
 
 const ForPc = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-[#0BA8CC]">
       <div className="container hidden lg:flex py-3 items-center justify-between ">
         <Link href={"/"}>
-          <div className="flex items-center gap-2 h-full -ml-4 w-28">
+          <div className="flex items-center gap-2 h-full -ml-4 w-48">
             <Image
               src={logo}
               alt="Booksy.buzz"
@@ -26,7 +26,7 @@ const ForPc = () => {
 
         <div className="">
           <Link href={"/login"}>
-            <MyButton title="Login" className="rounded-full" />
+            <MyButton title="Do you have clinic?" className="rounded-lg" />
           </Link>
         </div>
       </div>

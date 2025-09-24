@@ -14,35 +14,52 @@ const NavMenu = ({
     <div className={cn("flex  gap-6  font-normal ps-3", className)}>
       <Link href={"/"}>
         <div
-          // className="cursor-pointer hover:text-primary transition duration-200"
           className={cn(
-            "cursor-pointer hover:text-primary transition duration-200",
-            pathname === "/" && "text-primary font-semibold"
+            "cursor-pointer  hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/" && "text-tomato font-semibold"
           )}
         >
           Home
         </div>
       </Link>
-      <Link href={"/about"}>
+      <Link href={"/services"}>
         <div
-          // className="cursor-pointer hover:text-primary transition duration-200"
           className={cn(
-            "cursor-pointer hover:text-primary transition duration-200",
-            pathname === "/about" && "text-primary font-semibold"
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/services" && "text-tomato font-semibold"
+          )}
+        >
+          Services
+        </div>
+      </Link>
+      <Link href={"/about-us"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/about-us" && "text-tomato font-semibold"
           )}
         >
           About Us
         </div>
       </Link>
-      <Link href={"/contact"}>
+      <Link href={"/contact-us"}>
         <div
-          // className="cursor-pointer hover:text-primary transition duration-200"
           className={cn(
-            "cursor-pointer hover:text-primary transition duration-200",
-            pathname === "/contact" && "text-primary font-semibold"
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/contact-us" && "text-tomato font-semibold"
           )}
         >
           Contact Us
+        </div>
+      </Link>
+      <Link href={"/faq"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/faq" && "text-tomato font-semibold"
+          )}
+        >
+          FAQ
         </div>
       </Link>
     </div>

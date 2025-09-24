@@ -7,6 +7,8 @@ import { Toaster } from "sonner";
 import "./globals.css";
 import FacebookPixel from "@/FacebookPixel";
 
+import "antd/dist/reset.css";
+
 const inter = Inter({
   weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
