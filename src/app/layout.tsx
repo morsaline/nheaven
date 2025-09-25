@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 
-import { ConfigProvider, theme } from "antd";
+import { ConfigProvider } from "antd";
 import "antd/dist/reset.css";
 
 const inter = Inter({
@@ -53,7 +53,25 @@ export default function RootLayout({
                   lineHeight: 1.6,
                   controlHeight: 40,
                 },
-                algorithm: theme.defaultAlgorithm,
+                components: {
+                  Button: {
+                    colorPrimary: "#0BA8CC",
+                    colorPrimaryHover: "#0aa0bd",
+                    colorPrimaryActive: "#088aa3",
+
+                    colorSuccess: "#3ECF8E",
+                    colorSuccessHover: "#36b87d",
+                    colorSuccessActive: "#2fa36e",
+
+                    colorWarning: "#FAAD14",
+                    colorWarningHover: "#e89c0f",
+                    colorWarningActive: "#c27e0d",
+
+                    colorError: "#FF6B6B",
+                    colorErrorHover: "#e95e5e",
+                    colorErrorActive: "#c94d4d",
+                  },
+                },
               }}
             >
               <>

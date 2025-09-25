@@ -1,5 +1,11 @@
+import HeroSection from "@/components/pages/home/HeroSection/HeroSection";
+
 const HompPage = () => {
-  return <div className="container">Home page</div>;
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 };
 
 export default HompPage;

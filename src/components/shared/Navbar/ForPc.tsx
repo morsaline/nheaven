@@ -9,13 +9,13 @@ import NavMenu from "./NavMenu";
 
 const ForPc = () => {
   return (
-    <div className="bg-[#0BA8CC]">
+    <div className="bg-primary">
       <div className="container hidden lg:flex py-3 items-center justify-between ">
         <Link href={"/"}>
           <div className="flex items-center gap-2 h-full -ml-4 w-48">
             <Image
               src={logo}
-              alt="Booksy.buzz"
+              alt="Dentistul.ro"
               width={400}
               height={400}
               className="rounded object-contain"

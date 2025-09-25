@@ -22,8 +22,10 @@ export default function RootLayout({
         <ReduxProvider>
           <>
             <div className="min-h-screen grid grid-rows-[auto_1fr_auto] max-w-[100vw] overflow-hidden">
-              <Navbar />
-              <div className="min-h-[60vh]">{children}</div>
+              <div className="fixed top-0 z-50 w-full">
+                <Navbar />
+              </div>
+              <div className="min-h-[80vh]">{children}</div>
 
               <Footer />
             </div>

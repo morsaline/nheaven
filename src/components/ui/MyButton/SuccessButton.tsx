@@ -12,8 +12,9 @@ const SuccessButton: FC<SuccessButtonProps> = ({ text, className, icon }) => {
   return (
     <Button
       icon={icon}
-      style={{ backgroundColor: "#FAAD14", color: "#fff" }}
-      className={cn(className)}
+      type="primary"
+      style={{ backgroundColor: "#3ECF8E", color: "#fff", border: "none" }}
+      className={cn(className, "hover:!bg-green-300")}
     >
       {text}
     </Button>
