@@ -23,6 +23,11 @@ export default {
           dark: "#0092B3",
           light: "#33C7E2",
         },
+        secondary: {
+          DEFAULT: "#2E2E2E", // Blue
+          dark: "#2E2E2E",
+          light: "#2E2E2E",
+        },
         success: {
           DEFAULT: "#3ECF8E", // Green
           dark: "#158562",
