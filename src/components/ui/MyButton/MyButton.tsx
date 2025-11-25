@@ -1,19 +1,21 @@
-"use client";
-import { cn } from "@/lib/utils";
-import { Button } from "antd";
-import { FC } from "react";
+import { ChevronRight } from "lucide-react"; // Import ChevronRight from Lucide React
 
+// Define the component props interface with type safety
 interface MyButtonProps {
-  title: string;
-  className?: string;
+  text: string; // Text of the button (string)
+  onClick?: () => void; // Optional onClick handler (function)
 }
-const MyButton: FC<MyButtonProps> = ({ title, className }) => {
+
+const MyButton: React.FC<MyButtonProps> = ({ text, onClick }) => {
   return (
-    <>
-      <Button type="primary" danger className={cn(className)}>
-        {title}
-      </Button>
-    </>
+    <button
+      onClick={onClick}
+      className="px-6 py-3 bg-[#cedc1b] text-white rounded-full hover:bg-yellow-400 transition"
+    >
+      {text} {/* Dynamic text */}
+      <ChevronRight className="inline-block w-5 h-5 ml-2" />{" "}
+      {/* ChevronRight icon */}
+    </button>
   );
 };
 

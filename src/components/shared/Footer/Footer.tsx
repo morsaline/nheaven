@@ -1,164 +1,96 @@
-"use client";
-import logo from "@/assets/logo/logo.png";
-import {
-  InstagramOutlined,
-  MailOutlined,
-  PhoneFilled,
-} from "@ant-design/icons";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  FaFacebook,
-  FaGithub,
-  FaLocationPinLock,
-  FaXTwitter,
-} from "react-icons/fa6";
-
-const thirdRow = [
-  {
-    title: "About Us",
-    link: "/about-us",
-  },
-  {
-    title: "Clinic List",
-    link: "/clinic-list",
-  },
-  {
-    title: "Service",
-    link: "/service",
-  },
-  {
-    title: "Subscription",
-    link: "/subscription",
-  },
-  {
-    title: "FAQ",
-    link: "/faq",
-  },
-  {
-    title: "Contact Us",
-    link: "/contact-us",
-  },
-  {
-    title: "Blogs",
-    link: "/blogs",
-  },
-];
 const Footer = () => {
   return (
-    <div>
-      {/* top  */}
-      <div className="bg-primary py-20">
-        <div className="container">
-          <div className=" grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-5">
-            {/* col 1 */}
-            <div className="flex flex-col gap-6">
-              <div className="h-24 w-72 ">
-                <Image
-                  src={logo}
-                  className="object-contain"
-                  height={400}
-                  width={400}
-                  alt="image"
-                />
-              </div>
-              <p className="text-gray-light text-lg font-semibold">
-                ClinicaDigitala
-              </p>
-              <div className="flex flex-col gap-4">
-                {/* flex content */}
-                <div className="flex items-start gap-4 text-white">
-                  <div className="bg-white p-2 rounded-full text-white">
-                    <FaLocationPinLock className="text-primary" size={18} />
-                  </div>
-                  <p className="mt-1">
-                    Calea București 251, Brașov 500299, Romania
-                  </p>
-                </div>
-                {/* flex content */}
-                <div className="flex items-start gap-4 text-white">
-                  <div className="bg-white p-2 rounded-full text-white">
-                    <PhoneFilled className="text-primary" size={18} />
-                  </div>
-                  <p className="mt-1">123-456-7890</p>
-                </div>
-                {/* flex content */}
-                <div className="flex items-start gap-4 text-white">
-                  <div className="bg-white p-2 rounded-full text-white">
-                    <MailOutlined className="text-primary" size={18} />
-                  </div>
-                  <p className="mt-1">user@gmail.com</p>
-                </div>
-              </div>
-            </div>
-
-            {/* col 2 */}
-            <div className="flex flex-col gap-6">
-              {thirdRow?.map((item, i) => (
-                <Link href={item?.link} key={i} className=" inline-block w-fit">
-                  <div className="cursor-pointer text-white hover:text-tomato ">
-                    {item?.title}
-                  </div>
-                </Link>
-              ))}
-            </div>
-
-            {/* col 3 */}
-            <div className="text-white">
-              <p className="text-md font-bold mb-6">Do you have a Clinic?</p>
-              <p className="text-md font-medium mb-6">Become a Partner</p>
-              {/* get is touch  */}
-              <div className="mt-16">
-                <p className="text-md font-normal mb-6">Follow Us</p>
-
-                <div className="flex items-center gap-5">
-                  <div className="bg-transparent hover:bg-secondary duration-300 p-2 rounded-full border border-white">
-                    <FaXTwitter className="text-white" size={18} />
-                  </div>
-                  <div className="bg-transparent hover:bg-secondary duration-300 p-2 rounded-full border border-white">
-                    <FaFacebook className="text-white" size={18} />
-                  </div>
-                  <div className="bg-transparent hover:bg-secondary duration-300 p-2 rounded-full border border-white">
-                    <InstagramOutlined className="text-white" size={18} />
-                  </div>
-                  <div className="bg-transparent hover:bg-secondary duration-300 p-2 rounded-full border border-white">
-                    <FaGithub className="text-white" size={18} />
-                  </div>
-                </div>
-              </div>
-            </div>
+    <footer className="bg-[#b9e85f] text-black py-10 px-6 md:px-16">
+      <div className="flex max-w-[90rem] mx-auto flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
+        {/* Left Column: Logo and Contact Information */}
+        <div className="flex flex-col space-y-4 md:w-1/3">
+          <div className="flex items-center space-x-2">
+            <span className="font-extrabold text-2xl">RRC</span>
+            <span className="text-lg">Raleigh Racquet Club</span>
+          </div>
+          <p className="text-sm">
+            Address: 555 Falls of Neuse Rd. Raleigh, NC 27609
+          </p>
+          <p className="text-sm">Phone: (919) 370-5655</p>
+          <p className="text-sm">Mail: (919) 379-9097</p>
+          <div className="flex space-x-3 mt-4">
+            <a href="#" className="text-white hover:text-gray-300">
+              Instagram
+            </a>
+            <a href="#" className="text-white hover:text-gray-300">
+              Facebook
+            </a>
           </div>
         </div>
-      </div>
-      {/* bottom  */}
-      <div className="bg-secondary py-5">
-        <div className="container flex flex-col md:flex-row items-center justify-between text-white">
-          <div>
-            <ul className="list-disc flex items-center gap-5 space-x-6 flex-wrap">
+
+        {/* Center Column: Quick Links and About */}
+        <div className="flex flex-col md:flex-row md:space-x-16 space-y-4 md:space-y-0 text-sm md:text-base md:w-1/3">
+          <div className="space-y-2">
+            <h3 className="font-semibold">Quick Links</h3>
+            <ul>
               <li>
-                <Link href={"#"} className="hover:underline">
-                  Terms of Service
-                </Link>
+                <a href="#" className="hover:text-gray-300">
+                  Junior Tennis
+                </a>
               </li>
               <li>
-                <Link href={"#"} className="hover:underline">
-                  Privacy Policy
-                </Link>
+                <a href="#" className="hover:text-gray-300">
+                  Adult Tennis
+                </a>
               </li>
               <li>
-                <Link href={"#"} className="hover:underline">
-                  Cookies
-                </Link>
+                <a href="#" className="hover:text-gray-300">
+                  Indoor Tennis
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Pro Staff
+                </a>
               </li>
             </ul>
           </div>
-          <div>
-            © 2024 – 2029 Dariustodirascu Medical & Healthcare all rights
-            reserved.{" "}
+          <div className="space-y-2">
+            <h3 className="font-semibold">About</h3>
+            <ul>
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Out Staff
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Calendar
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Terms & Conditions
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+
+        {/* Right Column: Member Button */}
+        <div className="md:w-1/3 text-center md:text-right">
+          <h3 className="text-xl font-semibold mb-4">Be a member today!</h3>
+          <button className="px-6 py-3 bg-white text-[#b9e85f] rounded-full hover:bg-gray-200 transition">
+            Join us
+          </button>
+        </div>
       </div>
-    </div>
+
+      {/* Footer Bottom */}
+      <div className="mt-10 text-center text-sm text-gray-800">
+        <p>© 2023 Raleigh Racquet Club | All rights reserved</p>
+      </div>
+    </footer>
   );
 };
 

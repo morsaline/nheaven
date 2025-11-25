@@ -22,44 +22,44 @@ const NavMenu = ({
           Home
         </div>
       </Link>
-      <Link href={"/services"}>
+      <Link href={"/tennis"}>
         <div
           className={cn(
             "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
-            pathname === "/services" && "text-tomato font-semibold"
+            pathname === "/tennis" && "text-tomato font-semibold"
           )}
         >
-          Services
+          Tennis
         </div>
       </Link>
-      <Link href={"/about-us"}>
+      <Link href={"/resturant"}>
         <div
           className={cn(
             "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
-            pathname === "/about-us" && "text-tomato font-semibold"
+            pathname === "/resturant" && "text-tomato font-semibold"
           )}
         >
-          About Us
+          Resturant
         </div>
       </Link>
-      <Link href={"/contact-us"}>
+      <Link href={"/fitness"}>
         <div
           className={cn(
             "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
-            pathname === "/contact-us" && "text-tomato font-semibold"
+            pathname === "/fitness" && "text-tomato font-semibold"
           )}
         >
-          Contact Us
+          Fitness
         </div>
       </Link>
-      <Link href={"/faq"}>
+      <Link href={"/proshop"}>
         <div
           className={cn(
             "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
-            pathname === "/faq" && "text-tomato font-semibold"
+            pathname === "/proshop" && "text-tomato font-semibold"
           )}
         >
-          FAQ
+          Proshop
         </div>
       </Link>
     </div>
