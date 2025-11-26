@@ -62,6 +62,56 @@ const NavMenu = ({
           Proshop
         </div>
       </Link>
+      <Link href={"/calendar"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/calendar" && "text-tomato font-semibold"
+          )}
+        >
+          Calendar
+        </div>
+      </Link>
+      <Link href={"/joinus"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/joinus" && "text-tomato font-semibold"
+          )}
+        >
+          Join Us
+        </div>
+      </Link>
+      <Link href={"/ourstaff"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/ourstaff" && "text-tomato font-semibold"
+          )}
+        >
+          Our Staff
+        </div>
+      </Link>
+      <Link href={"/about"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/about" && "text-tomato font-semibold"
+          )}
+        >
+          About
+        </div>
+      </Link>
+      <Link href={"/contact"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/contact" && "text-tomato font-semibold"
+          )}
+        >
+          Contact
+        </div>
+      </Link>
     </div>
   );
 };
