@@ -112,6 +112,16 @@ const NavMenu = ({
           Contact
         </div>
       </Link>
+      <Link href={"/termsandcondition"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/termsandcondition" && "text-tomato font-semibold"
+          )}
+        >
+          TermsandCondtion
+        </div>
+      </Link>
     </div>
   );
 };

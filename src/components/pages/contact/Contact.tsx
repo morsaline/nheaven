@@ -3,6 +3,7 @@ import ReusableBanner from "../tennis/ReusableBanner";
 import contact1 from "@/assets/join/contact1.png";
 import contact2 from "@/assets/join/contact2.png";
 import contact3 from "@/assets/join/contact3.png";
+import MapSection from "./MapSection";
 
 function ContactPage() {
   return (
@@ -13,6 +14,7 @@ function ContactPage() {
         img2={contact2}
         img3={contact3}
       ></ReusableBanner>
+      <MapSection />
     </div>
   );
 }
