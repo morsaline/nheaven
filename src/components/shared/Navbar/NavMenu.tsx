@@ -122,6 +122,46 @@ const NavMenu = ({
           TermsandCondtion
         </div>
       </Link>
+      <Link href={"/junior-tennis"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/junior-tennis" && "text-tomato font-semibold"
+          )}
+        >
+          Junior Tennis
+        </div>
+      </Link>
+      <Link href={"/adult-tennis"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/adult-tennis" && "text-tomato font-semibold"
+          )}
+        >
+          Adult Tennis
+        </div>
+      </Link>
+      <Link href={"/pro-stuff-tennis"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/pro-stuff-tennis" && "text-tomato font-semibold"
+          )}
+        >
+          pro sutff tennis
+        </div>
+      </Link>
+      <Link href={"/indoor-tennis"}>
+        <div
+          className={cn(
+            "cursor-pointer hover:underline text-md text-white hover:text-tomato transition duration-200",
+            pathname === "/indoor-tennis" && "text-tomato font-semibold"
+          )}
+        >
+          indoor tennis
+        </div>
+      </Link>
     </div>
   );
 };
