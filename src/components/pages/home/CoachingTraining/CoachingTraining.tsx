@@ -6,8 +6,8 @@ import coaching3 from "@/assets/coaching/coaching3.png";
 const CoachingTraining = () => {
   return (
     <section className="flex flex-col md:flex-row gap-7 py-16 px-6 md:px-16 bg-white max-w-[90rem] mx-auto">
-      {/* Left Column: Text and Highlights */}
-      <div className="w-full space-y-6">
+      {/* Left Column: Text (mirrors TennisFacilities' right column) */}
+      <div className="w-full md:w-1/2 space-y-6">
         <h2 className="text-3xl font-extrabold">Coaching & Training</h2>
         <p className="text-lg text-gray-700">
           Learn, Train & Grow
@@ -29,35 +29,38 @@ const CoachingTraining = () => {
         </button>
       </div>
 
-      {/* Right Column: Images */}
-      <div className="flex space-x-4 mb-6 md:mb-0 w-full">
-        <div>
-          <div className="">
+      {/* Right Column: Images — EXACT same structure as TennisFacilities' left column */}
+      <div className="flex space-x-4 w-full md:w-1/2">
+        {/* First column: two stacked small images (like tennis2 + tennis3) */}
+        <div className="w-full flex flex-col gap-4">
+          <div className="h-[240px] md:h-[240px]">
             <Image
-              src={coaching1} // Replace with actual image path
-              alt="Tennis Court 2"
+              src={coaching1}
+              alt="Coaching 1"
               width={400}
-              height={300}
-              className="object-cover rounded-lg"
+              height={240}
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
-          <div className="mt-5">
+          <div className="h-[240px] md:h-[240px]">
             <Image
-              src={coaching2} // Replace with actual image path
-              alt="Tennis Court 3"
+              src={coaching2}
+              alt="Coaching 2"
               width={400}
-              height={300}
-              className="object-cover rounded-lg"
+              height={240}
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
         </div>
-        <div className="">
+
+        {/* Second column: one large image (like tennis1) */}
+        <div className="w-full h-[500px]">
           <Image
-            src={coaching3} // Replace with actual image path
-            alt="Tennis Court 1"
+            src={coaching3}
+            alt="Coaching 3"
             width={400}
-            height={300}
-            className="object-cover rounded-lg"
+            height={500}
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
       </div>

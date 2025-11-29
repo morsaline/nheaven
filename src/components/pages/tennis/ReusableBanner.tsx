@@ -1,15 +1,13 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
-// Define prop types for the ReusableBanner component
 interface ReusableBannerProps {
-  img1: string | StaticImageData; // The source for the first image (file path or URL)
-  img2: string | StaticImageData; // The source for the second image
-  img3: string | StaticImageData; // The source for the third image
-  title: string; // The title that will be displayed over the first image
+  img1: string | StaticImageData;
+  img2: string | StaticImageData;
+  img3: string | StaticImageData;
+  title: string;
 }
 
-// ReusableBanner Component
 const ReusableBanner: React.FC<ReusableBannerProps> = ({
   img1,
   img2,
@@ -17,42 +15,47 @@ const ReusableBanner: React.FC<ReusableBannerProps> = ({
   title,
 }) => {
   return (
-    <section className="max-w-[90rem] mx-auto py-16 px-6 md:px-16 my-10">
-      <div className="w-full flex flex-col md:flex-row gap-5">
-        {/* First Image (Large) */}
-        <div className="w-full md:w-[60%] h-[400px] relative">
+    <section className="max-w-[90rem] mx-auto py-6 px-2 sm:px-4 md:px-16 my-8 mt-20">
+      {/* Always a single row — no flex-col ever */}
+      <div className="w-full flex flex-row gap-2 sm:gap-3 md:gap-5">
+        {/* Main Image - 60% */}
+        <div className="w-[60%] h-[220px] sm:h-[280px] md:h-[400px] relative">
           <Image
             src={img1}
-            alt="Fitness 1"
-            layout="fill"
-            objectFit="cover"
+            alt="Banner 1"
+            fill
+            style={{ objectFit: "cover" }}
             className="rounded-lg"
           />
-          <p className="uppercase absolute bottom-0 left-0 text-white text-4xl md:text-8xl -mb-2 md:-mb-4 ">
+          <p
+            className="uppercase absolute bottom-0 left-0 sm:left-0 text-white font-bold
+                        text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl !-mb-3
+                        whitespace-nowrap"
+          >
             {title}
           </p>
         </div>
 
-        {/* Second and Third Images (Stacked on mobile, side by side on larger screens) */}
-        <div className="w-full md:w-[40%] flex flex-col md:flex-row gap-5">
-          {/* Second Image */}
-          <div className="w-full h-[400px] relative rounded-lg">
+        {/* Right container: 40% total width, holds two side-by-side images */}
+        <div className="w-[40%] flex flex-row gap-2 sm:gap-3">
+          {/* Image 2 - 50% of right area → 20% of total */}
+          <div className="w-1/2 h-[220px] sm:h-[280px] md:h-[400px] relative">
             <Image
               src={img2}
-              alt="Fitness 2"
-              layout="fill"
-              objectFit="cover"
+              alt="Banner 2"
+              fill
+              style={{ objectFit: "cover" }}
               className="rounded-lg"
             />
           </div>
 
-          {/* Third Image */}
-          <div className="w-full h-[400px] relative rounded-lg">
+          {/* Image 3 - 50% of right area → 20% of total */}
+          <div className="w-1/2 h-[220px] sm:h-[280px] md:h-[400px] relative">
             <Image
               src={img3}
-              alt="Fitness 3"
-              layout="fill"
-              objectFit="cover"
+              alt="Banner 3"
+              fill
+              style={{ objectFit: "cover" }}
               className="rounded-lg"
             />
           </div>

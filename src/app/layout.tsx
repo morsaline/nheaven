@@ -3,6 +3,7 @@ import { NextUiProvider } from "@/lib/providers/NextUIProvider";
 import ReduxProvider from "@/redux/ReduxProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import { Toaster } from "sonner";
 import "./globals.css";
 
