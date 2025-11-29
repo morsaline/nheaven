@@ -6,9 +6,9 @@ import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import NavMenu from "./NavMenu";
 
-import { Accordion, AccordionItem } from "@nextui-org/react";
+// import { Accordion, AccordionItem } from "@nextui-org/react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 const ForMobile = () => {
   const [open, setOpen] = useState(false);
 
@@ -21,12 +21,12 @@ const ForMobile = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-3 lg:hidden">
+    <div className="flex justify-between items-center px-3 lg:hidden bg-white">
       <Link href={"/"} className="">
         <div className="flex items-center gap-2 h-16 w-16">
           <Image
             src={logo}
-            alt="Booksy.buzz"
+            alt="Nheaven"
             width={200}
             height={200}
             className="rounded object-contain"
@@ -57,7 +57,7 @@ const ForMobile = () => {
               <div onClick={onClose}>
                 <div className=" w-full text-base">
                   <NavMenu className="flex-col mb-4" />
-                  <div className="ps-1 ">
+                  {/* <div className="ps-1 ">
                     <Accordion isCompact>
                       <AccordionItem
                         key="1"
@@ -86,8 +86,8 @@ const ForMobile = () => {
                         </div>
                       </AccordionItem>
                     </Accordion>
-                  </div>
-                  <div className="ps-1 ">
+                  </div> */}
+                  {/* <div className="ps-1 ">
                     <Accordion isCompact>
                       <AccordionItem
                         key="1"
@@ -128,7 +128,7 @@ const ForMobile = () => {
                         </div>
                       </AccordionItem>
                     </Accordion>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

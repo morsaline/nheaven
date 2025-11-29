@@ -6,6 +6,7 @@ import ReusableBanner from "../tennis/ReusableBanner";
 import junior1 from "@/assets/junior/junior1.png";
 import junior2 from "@/assets/junior/junior2.png";
 import junior3 from "@/assets/junior/junior3.png";
+import Link from "next/link";
 
 const TournamentGroup = () => {
   return (
@@ -53,12 +54,12 @@ const TournamentGroup = () => {
             Members may register online through their member portal. Non-members
             can mail or drop off a completed form to 5516 Falls of Neuse Road,
             Raleigh, NC 27609, email to Kaushal Maljan at{" "}
-            <a
+            <Link
               href="mailto:kaushal@rrctennis.com"
               className="text-blue-500 hover:underline"
             >
               kaushal@rrctennis.com
-            </a>
+            </Link>
             , or dropped off at the RRC Pro Shop with payment.
           </p>
           <p className="text-sm text-gray-500 mt-2">

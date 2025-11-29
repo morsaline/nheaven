@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import clinicImage from "@/assets/junior/BeginerTennis.png"; // Replace with actual image path
+import Link from "next/link";
 
 const InbeTweenClinic = () => {
   return (
@@ -33,12 +34,12 @@ const InbeTweenClinic = () => {
       {/* Link and Contact Info */}
       <div className="text-center mt-12">
         <p className="text-lg text-gray-600 mb-4">Begin your tennis journey</p>
-        <a
+        <Link
           href="https://example.com" // Replace with actual link
           className="text-blue-500 hover:underline"
         >
           Click here to register for the InbeTween clinic.
-        </a>
+        </Link>
         <p className="text-sm text-gray-500 mt-4">
           Members may register for clinics through their member portal.
           Non-members can mail or drop off a completed form to 5516 Falls of
@@ -53,12 +54,12 @@ const InbeTweenClinic = () => {
         </p>
         <p className="text-sm text-gray-500 mt-2">
           Please email any questions about this program to Andrea Terrill at{" "}
-          <a
+          <Link
             href="mailto:andrea@rrctennis.com"
             className="text-blue-500 hover:underline"
           >
             andrea@rrctennis.com
-          </a>
+          </Link>
         </p>
       </div>
     </div>
